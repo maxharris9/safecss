@@ -95,9 +95,12 @@ const check = (testName) => {
             //     type: 'rule'
             //   }
             // }
-            // rule.declarations.forEach(declaration => {
-            //   node.css = merge(true, node.css, { [declaration.property]: declaration.value })
-            // })
+
+            if (parent) {
+              rule.declarations.forEach(declaration => {
+                node.css = merge(true, node.css, { [declaration.property]: declaration.value })
+              })
+            }
 
 
             // console.log('htmlClassNames:', htmlClassNames)
