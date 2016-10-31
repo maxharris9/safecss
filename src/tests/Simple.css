@@ -1,0 +1,23 @@
+.Simple {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-light1);
+  fill: var(--color-light1);
+  text-transform: uppercase;
+  float: right;
+}
+
+.Simple > * {
+  cursor: initial;
+  border: initial;
+  background: initial;
+  margin: initial;
+  padding: initial;
+  color: initial;
+  fill: initial;
+  text-transform: initial;
+  float: initial;
+}

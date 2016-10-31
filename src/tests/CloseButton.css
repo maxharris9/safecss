@@ -1,0 +1,40 @@
+.CloseButton {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-light1);
+  fill: var(--color-light1);
+  text-transform: uppercase;
+  float: right;
+}
+.CloseButton:hover {
+  color: var(--color-action);
+  fill: var(--color-action);
+}
+.CloseButton:active {
+  color: var(--color-base);
+  fill: var(--color-base);
+}
+.CloseButton > span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.CloseButton > span > * {
+  cursor: initial;
+  border: initial;
+  background: initial;
+  margin: initial;
+  padding: initial;
+  color: initial;
+  fill: initial;
+  text-transform: initial;
+  float: initial;
+
+  font-size: initial;
+  letter-spacing: initial;
+  font-weight: initial;
+}
