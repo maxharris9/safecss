@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "build": "babel --plugins transform-react-jsx src --out-dir build",
-    "start": "nsolid build/main.js"
+    "build": "babel --plugins transform-react-jsx src --out-dir build && cp src/test/fixtures/*.css build/test/fixtures/",
+    "start": "nsolid build/main.js",
+    "test": "tape build/test/test.js"
   },
   "dependencies": {
     "acorn-jsx": "^3.0.1",
@@ -15,5 +16,8 @@
     "merge": "^1.2.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
   }
 }
